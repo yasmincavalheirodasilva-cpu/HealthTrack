@@ -3,7 +3,11 @@ public class Paciente {
     int idade;
 
     public Paciente(String nome, int idade) {
-    this.nome = nome;
-    this.idade = idade;
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public double calcularIMC(double peso, double altura) {
+        return peso / (altura * altura);
     }
 }
