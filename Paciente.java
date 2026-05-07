@@ -6,4 +6,9 @@ public class Paciente {
     this.nome = nome;
     this.idade = idade;
     }
+
+    public double calcularIMC(double peso, double altura) {
+        return peso / (altura * altura);
+
+    }
 }
